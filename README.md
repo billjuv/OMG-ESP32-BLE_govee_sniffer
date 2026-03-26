@@ -3,8 +3,9 @@
 ESP32 D1 Mini boards with OMG “esp32dev-ble’ firmware.  
   
 These boards ‘sniff’ for all Bluetooth BLE signals and send the data to the MQTT broker you configure over WiFi. They fit nicely into a 3d printed case and hang from a USB Micro cable plugged into a small USB charger, supplying 5v to the ESP board.   
-![Image](Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpg
-)  
+
+![Image](Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpg width="60%")  
+
 Initial configuration is done through the ‘OMG-32-BLE’ (?) access point. Connect to the network on your phone and set the WiFi and MQTT credentials. Subsequent changes are done by pulling up the device IP address.  
   
 If there are a lot of BLE devices in the area, you may want to create a “white-list” for the MQTT broker to limit it to just the devices you want to track.  
