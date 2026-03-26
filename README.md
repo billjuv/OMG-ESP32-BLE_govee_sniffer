@@ -1,5 +1,4 @@
 # “Govee Sniffers”  
-#govee #nodered #omg #esp32   
   
 ESP32 D1 Mini boards with OMG “esp32dev-ble’ firmware.  
   
