@@ -152,8 +152,8 @@
   {
     "id": "5658d9f121988d23",
     "type": "mqtt-broker",
-    "name": "HomePi - MQTT",
-    "broker": "10.0.1.xxx",
+    "name": "your_MQTT_broker",
+    "broker": "xxx.xxx.xx.xxx",
     "port": "1883",
     "clientid": "",
     "autoConnect": true,
