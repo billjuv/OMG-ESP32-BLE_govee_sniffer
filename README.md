@@ -1,4 +1,4 @@
-# "Govee Sniffers" — ESP32 BLE to MQTT with OpenMQTTGateway
+# "Govee Sniffers" — ESP32 Bluetooth BLE to MQTT with OpenMQTTGateway
 
 These are ESP32 D1 Mini boards flashed with OpenMQTTGateway (OMG) `esp32dev-ble` firmware. They listen for all nearby Bluetooth BLE signals and forward the data to your MQTT broker over WiFi.
 
@@ -16,7 +16,7 @@ They fit nicely into a 3D printed case and hang from a USB Micro cable plugged i
 - USB Micro cable and 5V USB charger
 - [3D printed case — ESP32 D1 Mini Case by briancmoses (Printables.com)](https://www.printables.com/model/342820-esp32-d1-mini-case)
 
-> **Note on the case:** The lid brim hits the reset switch on the board, preventing the lid from fitting properly. Trim a small amount off the brim to fix this.
+> **Note on the case:** The lid brim hits the reset switch on the board, preventing the lid from fitting properly. Trim a small amount off the brim around the switch to fix this.
 
 <img src=Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpg width="60%"/>
 
