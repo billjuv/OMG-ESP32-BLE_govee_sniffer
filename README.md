@@ -99,7 +99,7 @@ The MQTT topic for each Govee device is based on its MAC address:
 OMGhome/OMG_ESP32_BLE/BTtoMQTT/A4C1385A13DD
 ```
 
-<img src=Attachments/2139D691-E4E3-4235-940E-AD0069B67DE9.png width="80%"/>
+<img src=Attachments/2139D691-E4E3-4235-940E-AD0069B67DE9.png width="100%"/>
 
 Example payload from a Govee H5074 Thermo-Hygrometer:
 
@@ -131,7 +131,7 @@ The included Node-RED flow (`OMG_Govee.json` in the NodeRed folder) splits incom
 - Switch node routes `tempf` and `hum` values to separate outputs
 - Link Out nodes pass values downstream to dashboard or InfluxDB nodes
 
-<img src=Attachments/77AD7CA5-F47E-4857-9A94-1221D3579624.jpg width="80%"/>
+<img src=Attachments/77AD7CA5-F47E-4857-9A94-1221D3579624.jpg width="100%"/>
 
 <img src=Attachments/5A2F676D-7AE5-4284-8F90-89177701A9FC.jpg width="60%"/>
 
