@@ -1,4 +1,4 @@
-# "Govee Sniffers" — ESP32 BLE to MQTT with OpenMQTTGateway
+# "Govee Sniffers" — ESP32 Bluetooth BLE to MQTT with OpenMQTTGateway
 
 These are ESP32 D1 Mini boards flashed with OpenMQTTGateway (OMG) `esp32dev-ble` firmware. They listen for all nearby Bluetooth BLE signals and forward the data to your MQTT broker over WiFi.
 
@@ -16,7 +16,7 @@ They fit nicely into a 3D printed case and hang from a USB Micro cable plugged i
 - USB Micro cable and 5V USB charger
 - [3D printed case — ESP32 D1 Mini Case by briancmoses (Printables.com)](https://www.printables.com/model/342820-esp32-d1-mini-case)
 
-> **Note on the case:** The lid brim hits the reset switch on the board, preventing the lid from fitting properly. Trim a small amount off the brim to fix this.
+> **Note on the case:** The lid brim hits the reset switch on the board, preventing the lid from fitting properly. Trim a small amount off the brim around the switch to fix this.
 
 <img src=Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpg width="60%"/>
 
@@ -99,7 +99,7 @@ The MQTT topic for each Govee device is based on its MAC address:
 OMGhome/OMG_ESP32_BLE/BTtoMQTT/A4C1385A13DD
 ```
 
-<img src=Attachments/2139D691-E4E3-4235-940E-AD0069B67DE9.png width="60%"/>
+<img src=Attachments/2139D691-E4E3-4235-940E-AD0069B67DE9.png width="100%"/>
 
 Example payload from a Govee H5074 Thermo-Hygrometer:
 
@@ -131,7 +131,7 @@ The included Node-RED flow (`OMG_Govee.json` in the NodeRed folder) splits incom
 - Switch node routes `tempf` and `hum` values to separate outputs
 - Link Out nodes pass values downstream to dashboard or InfluxDB nodes
 
-<img src=Attachments/77AD7CA5-F47E-4857-9A94-1221D3579624.jpg width="60%"/>
+<img src=Attachments/77AD7CA5-F47E-4857-9A94-1221D3579624.jpg width="100%"/>
 
 <img src=Attachments/5A2F676D-7AE5-4284-8F90-89177701A9FC.jpg width="60%"/>
 
