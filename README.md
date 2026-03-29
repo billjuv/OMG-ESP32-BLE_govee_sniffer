@@ -18,7 +18,7 @@ They fit nicely into a 3D printed case and hang from a USB Micro cable plugged i
 
 > **Note on the case:** The lid brim hits the reset switch on the board, preventing the lid from fitting properly. Trim a small amount off the brim around the switch to fix this.
 
-<img src=Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpg width="60%"/>
+<img src=Attachments/5FB23FBC-6F71-4341-87C9-EF0F291E7915.jpeg width="60%"/>
 
 ---
 
