@@ -141,6 +141,30 @@ The included Node-RED flow (`OMG_Govee.json` in the NodeRed folder) splits incom
 
 ---
 
+## Home Assistant Integration
+
+Since these devices use standard MQTT with JSON payloads, Govee sensor readings can be added to Home Assistant using MQTT sensors in `configuration.yaml`. The topic includes the device's MAC address (without colons):
+
+```yaml
+mqtt:
+  sensor:
+    - name: "Freezer Temperature"
+      state_topic: "OMGhome/OMG_ESP32_BLE/BTtoMQTT/A4C1385AFC5D"
+      value_template: "{{ value_json.tempf }}"
+      unit_of_measurement: "°F"
+
+    - name: "Freezer Humidity"
+      state_topic: "OMGhome/OMG_ESP32_BLE/BTtoMQTT/A4C1385AFC5D"
+      value_template: "{{ value_json.hum }}"
+      unit_of_measurement: "%"
+```
+
+Replace the MAC address in the topic with your device's MAC (found in the MQTT topic or the white list). Repeat for each sensor and each value you want to track (`tempc`, `tempf`, `hum`, `batt`). Restart Home Assistant after saving.
+
+> Note: Your MQTT broker must be configured in Home Assistant first. See the [HA MQTT integration docs](https://www.home-assistant.io/integrations/mqtt/) for details.
+
+---
+
 ## Related Resources
 
 - [OpenMQTTGateway Documentation](https://docs.openmqttgateway.com)
