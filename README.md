@@ -1,4 +1,5 @@
 # "Govee Sniffers" — ESP32 Bluetooth BLE to MQTT with OpenMQTTGateway
+> 🍄 One of several related projects. See the full list at **[billjuv.github.io](https://billjuv.github.io)**.
 
 These are ESP32 D1 Mini boards flashed with OpenMQTTGateway (OMG) `esp32dev-ble` firmware. They listen for all nearby Bluetooth BLE signals and forward the data to your MQTT broker over WiFi.
 
